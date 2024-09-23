@@ -12,32 +12,30 @@ int main() {
     int num;
     std::cout << "Enter the laboratory number: ";
     std::cin >> num;
-    if (num == 1) {
+    switch (num) {
+    case 1:
         lab1();
-    }
-    else if (num == 2)
-    {
+        break;
+    case 2:
         lab2();
-    }
-    else if (num == 3)
-    {
+        break;
+    case 3:
         lab3();
-    }
-    else if (num == 4)
-    {
+        break;
+    case 4:
         lab4();
-    }
-    else if (num == 5)
-    {
+        break;
+    case 5:
         lab5();
-    }
-    else if (num == 6)
-    {
+        break;
+    case 6:
         lab6();
+        break;
+    default:
+        std::cout << "Lab does not exist." << std::endl;
     }
-    else {
-        std::cout << "Lab is no exists";
-    };
+
+    return 0;
 }
 
 void lab1()
